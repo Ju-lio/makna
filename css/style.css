@@ -1,0 +1,152 @@
+* {
+   /* Variáveis */
+   margin: 0;
+   font-family:'Helvetica';
+   color: #171026;
+}
+
+/* ###### HEADER ######  */
+
+li {
+   list-style: none;
+   height: 100%;
+}
+
+body {
+   background: #E9E9E9;
+}
+
+a {
+   text-decoration: none;
+}
+
+.navHeader {
+   display: flex;
+   align-items: center;
+   padding: 0 15px 0 15px;
+   width: 100%;
+   height: 80px;
+   background: linear-gradient(#7E5E8C, #9198e5);
+}
+
+.menu {
+   display: flex;
+   align-items: center;
+   height: 100%;
+   padding: 0 15px 0 15px;
+}
+
+.logoHeader {
+   width: 100%;
+}
+
+.logoHeader svg {
+   fill: #E4EDF2;
+}
+
+.logoHeader svg:hover {
+   fill: #F299D3;
+   cursor: pointer;
+}
+
+.menu a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 15vw;
+   height: 100%;
+   color: #E4EDF2;
+}
+
+.menu a:focus {
+   outline: none;
+}
+
+.menu a:hover {
+   background: linear-gradient(#5e4769, #BF7EAE);
+   color: #CEEFF2;
+}
+
+/* ###### CONTEÚDO ######  */
+
+.logoConteudo {
+   padding: 50px 0;
+   display: flex;
+   justify-content: center;
+}
+
+.conteudo {
+   display: grid;
+   margin: auto;
+   align-items: center;
+   justify-items: flex-end;
+   max-width: 70vw;
+   grid-template-columns: 1fr 1fr;
+   background-color: white;
+   /* border: 8px solid white; */
+}
+
+.introducao {
+   width: 70%;
+   padding: 15px;
+   text-align: end;
+}
+
+#label-introducao {
+   font-size: 22pt;
+   margin-bottom: 15px;
+}
+
+.introducao-cover > img {
+   width: 100%;
+   height: 100%;
+}
+
+.conteudo-dois {
+   display: grid;
+   margin: auto;
+   align-items: center;
+   max-width: 70vw;
+   grid-template-columns: 1fr 1fr;
+   /* background-color: white; */
+}
+
+.conteudo-dois h2 {
+   font-size: 38pt;
+   color:#BABABA;
+   text-align: end;
+}
+
+.introducao-dois {
+   padding-right: 30px;
+}
+
+.faixas {
+   padding: 50px;
+   background: white;
+}
+
+.faixas-item:nth-child(2n+1) {
+   background: #E9E9E9;
+}
+
+.faixas-item {
+   padding: 20px 0;
+}
+
+.faixas-item h3 {
+   margin: 0 0 10px 30px;
+   font-size: 15pt;
+}
+
+.faixas-item h4 {
+   margin-left: 60px;
+   font-size: 11pt;
+   color: #8a8888;
+}
+
+.faixas-item:hover {
+   border-left: 6px solid red;
+   cursor: crosshair;
+}
+
