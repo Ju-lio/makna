@@ -146,7 +146,35 @@ a {
 }
 
 .faixas-item:hover {
-   border-left: 6px solid red;
+   border-left: 6px solid #F299D3;
    cursor: crosshair;
 }
 
+/* ###### RODAPÉ ###### */
+
+.rodape {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: white;
+   margin-top: 15px;
+}
+
+.rodape div {
+   width: calc(100% - 60px);
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.rodape svg {
+   margin: 15px;
+   width: 40px;
+   height: 40px;
+   fill: #F299D3;
+}
+
+.rodape svg:hover {
+   fill: red;
+   cursor: pointer;
+}
