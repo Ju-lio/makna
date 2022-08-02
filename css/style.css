@@ -5,6 +5,11 @@
    color: #171026;
 }
 
+*::selection {
+   background: #F299D3;
+   color: white;
+}
+
 /* ###### HEADER ######  */
 
 li {
@@ -23,7 +28,6 @@ a {
 .navHeader {
    display: flex;
    align-items: center;
-   padding: 0 15px 0 15px;
    width: 100%;
    height: 80px;
    background: linear-gradient(#7E5E8C, #9198e5);
@@ -38,6 +42,7 @@ a {
 
 .logoHeader {
    width: 100%;
+   margin-left: 15px;
 }
 
 .logoHeader svg {
@@ -58,7 +63,7 @@ a {
    color: #E4EDF2;
 }
 
-.menu a:focus {
+a:focus {
    outline: none;
 }
 
@@ -73,6 +78,7 @@ a {
    padding: 50px 0;
    display: flex;
    justify-content: center;
+   fill: #BABABA;
 }
 
 .conteudo {
@@ -97,7 +103,7 @@ a {
    margin-bottom: 15px;
 }
 
-.introducao-cover > img {
+.introducao-cover img {
    width: 100%;
    height: 100%;
 }
@@ -131,22 +137,24 @@ a {
 }
 
 .faixas-item {
-   padding: 20px 0;
 }
 
 .faixas-item h3 {
-   margin: 0 0 10px 30px;
+   padding: 20px 0 10px 30px;
    font-size: 15pt;
 }
 
 .faixas-item h4 {
-   margin-left: 60px;
+   padding: 0 0 20px 60px;
    font-size: 11pt;
    color: #8a8888;
 }
 
 .faixas-item:hover {
    border-left: 6px solid #F299D3;
+}
+
+.faixas-item a:hover {
    cursor: crosshair;
 }
 
@@ -161,7 +169,7 @@ a {
 }
 
 .rodape div {
-   width: calc(100% - 60px);
+   width: 100%;
    align-items: center;
    justify-content: center;
    text-align: center;
