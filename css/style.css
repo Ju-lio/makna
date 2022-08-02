@@ -1,7 +1,7 @@
 * {
    /* Variáveis */
    margin: 0;
-   font-family:'Helvetica';
+   font-family: 'Helvetica';
    color: #171026;
 }
 
@@ -34,10 +34,13 @@ a {
 }
 
 .menu {
+   height: 100%;
+}
+
+.menu ul{
    display: flex;
    align-items: center;
    height: 100%;
-   padding: 0 15px 0 15px;
 }
 
 .logoHeader {
@@ -104,6 +107,7 @@ a:focus {
 }
 
 .introducao-cover img {
+   display: block;
    width: 100%;
    height: 100%;
 }
@@ -119,7 +123,7 @@ a:focus {
 
 .conteudo-dois h2 {
    font-size: 38pt;
-   color:#BABABA;
+   color: #BABABA;
    text-align: end;
 }
 
@@ -182,4 +186,136 @@ a:focus {
 .rodape svg:hover {
    fill: red;
    cursor: pointer;
+}
+
+.menuMobile {
+   display: none;
+   height: 40px;
+   width: 40px;
+   margin: 20px 20px 60px 0;
+}
+
+.mm_line {
+   height: 2px;
+   background-color: #ffffff;
+}
+
+/* #### RESPONSIVIDADE #### */
+
+@media (max-width: 1000px) {
+
+   .logoConteudo {
+      display: none;
+   }
+
+   .conteudo {
+      margin-top: 5vw;
+      max-width: 90vw;
+   }
+
+   .introducao-dois {
+      padding: 30px;
+   }
+
+   .introducao-dois>h2 {
+      text-align: center;
+   }
+
+   .conteudo-dois {
+      display: grid;
+      margin: auto;
+      align-items: center;
+      max-width: 90vw;
+      grid-template-columns: 1fr;
+   }
+
+}
+
+/* @media (max-width:700px) {
+   .menu {
+      display: none;
+   }
+
+   .menuMobile {
+      display: flex;
+   }
+} */
+
+@media (max-width: 700px) {
+
+   .menuMobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      cursor: pointer;
+   }
+
+   .menu a:hover {
+      background: #BF7EAE;
+      color: #CEEFF2;
+   }
+
+   .menu ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      height: 300px;
+      left: 0;
+      width: 100%;
+      background:#9198e5;
+      padding: 0;
+   }
+
+   .menu li, .menu a{
+      width: 100%;
+   }
+
+   .logoConteudo {
+      display: none;
+   }
+
+   .introducao {
+      text-align: center;
+      padding: 40px;
+   }
+
+   .conteudo {
+      margin-top: 5vw;
+      max-width: 100vw;
+      grid-template-columns: 1fr;
+      justify-items: center;
+   }
+
+   .introducao-dois {
+      padding: 30px;
+   }
+
+   .introducao-dois>h2 {
+      text-align: center;
+   }
+
+   .conteudo-dois {
+      display: grid;
+      margin: auto;
+      align-items: center;
+      max-width: 100vw;
+      grid-template-columns: 1fr;
+   }
+
+   .faixas {
+      padding: 15px;
+   }
+
+   .rodape {
+      font-size: 9pt;
+      margin-right: 10px;
+   }
+
+}
+
+@media (min-width:700px) {
+   .menu ul {
+      display: flex !important;
+   }
 }

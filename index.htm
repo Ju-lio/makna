@@ -8,12 +8,24 @@
    <link rel="shortcut icon" onclick="bubble.play()" href="favicon.png" type="image/x-icon">
    <link rel="stylesheet" onclick="bubble.play()" href="css/style.css">
    <title>Makna Corporation</title>
+   
+<script type="text/javascript">
+   window.onload = function() {
+       document.querySelector(".menuMobile").addEventListener("click", function() {
+           if(document.querySelector(".menu ul").style.display == 'flex') {
+               document.querySelector(".menu ul").style.display = 'none';
+           } else {
+               document.querySelector(".menu ul").style.display = 'flex';
+           }
+       });
+   };
+</script>
 </head>
 
 <body>
    <header>
       <nav class="navHeader">
-         <div class="logoHeader">
+         <div class="logoHeader" on>
             <a target="_blank" onclick="bubble.play()" href="https://open.spotify.com/artist/7LQx5v80OHFbMlHlzzlcAF?si=2Px4AKvCTYKCvPuXIDZ18g">
                <svg width="200px" height="40px" viewBox="0 0 20626.000000 4318.000000"
                   preserveAspectRatio="xMidYMid meet">
@@ -34,21 +46,27 @@
                </svg>
             </a>
          </div>
-
-         <ul class="menu">
-            <li>
-               <a onclick="bubble.play()" href="">INÍCIO</a>
-            </li>
-            <li>
-               <a onclick="bubble.play()" href="">SOBRE</a>
-            </li>
-            <li>
-               <a onclick="bubble.play()" href="">DISCOGRAFIA</a>
-            </li>
-            <li>
-               <a onclick="bubble.play()" href="">CONTATO</a>
-            </li>
-         </ul>
+         <div class="menu">
+            <div class="menuMobile">
+               <div class="mm_line"></div>
+               <div class="mm_line"></div>
+               <div class="mm_line"></div>
+            </div>
+            <ul>
+               <li>
+                  <a onclick="bubble.play()" href="">INÍCIO</a>
+               </li>
+               <li>
+                  <a onclick="bubble.play()" href="">SOBRE</a>
+               </li>
+               <li>
+                  <a onclick="bubble.play()" href="">DISCOGRAFIA</a>
+               </li>
+               <li>
+                  <a onclick="bubble.play()" href="">CONTATO</a>
+               </li>
+            </ul>
+         </div>
       </nav>
 
 
