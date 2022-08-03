@@ -1,5 +1,4 @@
 * {
-   /* Variáveis */
    margin: 0;
    font-family: 'Helvetica';
    color: #171026;
@@ -30,7 +29,7 @@ a {
    align-items: center;
    width: 100%;
    height: 80px;
-   background: #BF7EAE;
+   background:#8b90c7;
 }
 
 .menu {
@@ -44,12 +43,22 @@ a {
 }
 
 .logoHeader {
+   display: flex;
+   align-items: center;
    width: 100%;
    margin-left: 15px;
 }
 
 .logoHeader svg {
    fill: #E4EDF2;
+}
+
+.logoHeader::after {
+   content: 'lite version';
+   color: rgba(255, 255, 255, 0.5);
+   font-size: 8pt;
+   text-align: center;
+   justify-items: center;
 }
 
 .logoHeader svg:hover {
@@ -71,8 +80,8 @@ a:focus {
 }
 
 .menu a:hover {
-   background:  #a16e90;
-   color: #F299D3;
+   background: #9198e5;
+   color: #CEEFF2;
 }
 
 /* ###### CONTEÚDO ######  */
@@ -92,7 +101,6 @@ a:focus {
    max-width: 70vw;
    grid-template-columns: 1fr 1fr;
    background-color: white;
-   /* border: 8px solid white; */
 }
 
 .introducao {
@@ -118,7 +126,6 @@ a:focus {
    align-items: center;
    max-width: 70vw;
    grid-template-columns: 1fr 1fr;
-   /* background-color: white; */
 }
 
 .conteudo-dois h2 {
@@ -152,11 +159,11 @@ a:focus {
 }
 
 .faixas-item:hover {
-   border-left: 6px solid #F299D3;
+   border-left: 6px solid #9198E5;
 }
 
 .faixas-item a:hover {
-   cursor: crosshair;
+   cursor: pointer;
 }
 
 /* ###### RODAPÉ ###### */
@@ -180,11 +187,11 @@ a:focus {
    margin: 15px;
    width: 40px;
    height: 40px;
-   fill: #F299D3;
+   fill: #9198e5;
 }
 
 .rodape svg:hover {
-   fill: red;
+   fill: #F299D3;
    cursor: pointer;
 }
 
@@ -231,16 +238,6 @@ a:focus {
 
 }
 
-/* @media (max-width:700px) {
-   .menu {
-      display: none;
-   }
-
-   .menuMobile {
-      display: flex;
-   }
-} */
-
 @media (max-width: 700px) {
 
    .menuMobile {
@@ -248,11 +245,6 @@ a:focus {
       flex-direction: column;
       justify-content: space-around;
       cursor: pointer;
-   }
-
-   .menu a:hover {
-      background: #BF7EAE;
-      color: #CEEFF2;
    }
 
    .menu ul {
@@ -263,7 +255,7 @@ a:focus {
       height: 300px;
       left: 0;
       width: 100%;
-      background:#9198e5;
+      background: #8B90C7;
       padding: 0;
    }
 

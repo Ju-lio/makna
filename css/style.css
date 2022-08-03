@@ -35,7 +35,7 @@ body {
 
 a {
    text-decoration: none;
-   cursor: crosshair;
+   cursor: pointer;
 }
 
 .navHeader {
@@ -43,7 +43,7 @@ a {
    align-items: center;
    width: 100%;
    height: 80px;
-   background: linear-gradient(#7E5E8C, #9198e5);
+   background: #BF7EAE;
 }
 
 .menu {
@@ -67,7 +67,7 @@ a {
 
 .logoHeader svg:hover {
    fill: #F299D3;
-   cursor: crosshair;
+   cursor: pointer;
 }
 
 .menu a {
@@ -84,8 +84,8 @@ a:focus {
 }
 
 .menu a:hover {
-   background: linear-gradient(#5e4769, #BF7EAE);
-   color: #CEEFF2;
+   background:  #a16e90;
+   color: #F299D3;
 }
 
 /* ###### CONTEÚDO ######  */
@@ -105,7 +105,6 @@ a:focus {
    max-width: 70vw;
    grid-template-columns: 1fr 1fr;
    background-color: white;
-   /* border: 8px solid white; */
 }
 
 .introducao {
@@ -126,7 +125,6 @@ a:focus {
    max-width: 70vw;
    z-index: 2;
    grid-template-columns: 1fr 1fr;
-   /* background-color: white; */
 }
 
 .conteudo-dois h2 {
@@ -188,9 +186,20 @@ a:focus {
    fill: #F299D3;
 }
 
+.robozito {
+   margin: 15px;
+   width: 40px;
+   height: 40px;
+   fill: #F299D3;
+}
+
 .rodape svg:hover {
-   fill: red;
-   cursor: crosshair;
+   fill: #9198e5;
+   cursor: pointer;
+}
+
+.rodape a {
+   
 }
 
 /* ### ANIMATON ### */
@@ -253,6 +262,7 @@ a:focus {
 
    transition-property: width;
    transition-duration: 1s;
+   pointer-events: none;
 }
 
 .faixas-item:hover::after {
@@ -290,30 +300,14 @@ a:focus {
 
 }
 
-/* @media (max-width:700px) {
-   .menu {
-      display: none;
-   }
-
-   .menuMobile {
-      display: flex;
-   }
-} */
-
 @media (max-width: 700px) {
 
    .menuMobile {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      cursor: crosshair;
    }
-
-   .menu a:hover {
-      background: #BF7EAE;
-      color: #CEEFF2;
-   }
-
+   
    .menu ul {
       display: none;
       flex-direction: column;
@@ -322,8 +316,9 @@ a:focus {
       height: 300px;
       left: 0;
       width: 100%;
-      background:#9198e5;
+      background:#BF7EAE;
       padding: 0;
+      z-index: 999;
    }
 
    .menu li, .menu a{
