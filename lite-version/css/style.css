@@ -214,7 +214,8 @@ a:focus {
 }
 
 .mm_line {
-   height: 2px;
+   height: 8px;
+   border-radius: 3px;
    background-color: #ffffff;
 }
 

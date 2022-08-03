@@ -8,25 +8,13 @@
    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
    <link rel="stylesheet" href="css/style.css">
    <title>Makna Corporation</title>
-   
-<script type="text/javascript">
-   window.onload = function() {
-       document.querySelector(".menuMobile").addEventListener("click", function() {
-           if(document.querySelector(".menu ul").style.display == 'flex') {
-               document.querySelector(".menu ul").style.display = 'none';
-           } else {
-               document.querySelector(".menu ul").style.display = 'flex';
-           }
-       });
-   };
-</script>
 </head>
 
 <body>
    <header>
       <nav class="navHeader">
          <div class="logoHeader" on>
-            <a target="_blank" href="https://open.spotify.com/artist/7LQx5v80OHFbMlHlzzlcAF?si=2Px4AKvCTYKCvPuXIDZ18g">
+            <a onclick="darkMode()">
                <svg width="200px" height="40px" viewBox="0 0 20626.000000 4318.000000"
                   preserveAspectRatio="xMidYMid meet">
                   <g transform="translate(0,4318) scale(0.1,-0.1)" fill="" stroke="none">
@@ -54,16 +42,16 @@
             </div>
             <ul>
                <li>
-                  <a href="">INÍCIO</a>
+                  <a>INÍCIO</a>
                </li>
                <li>
-                  <a href="">SOBRE</a>
+                  <a>SOBRE</a>
                </li>
                <li>
-                  <a href="">DISCOGRAFIA</a>
+                  <a>DISCOGRAFIA</a>
                </li>
                <li>
-                  <a href="">CONTATO</a>
+                  <a>CONTATO</a>
                </li>
             </ul>
          </div>
@@ -168,5 +156,19 @@
       </a>
    </footer>
 </body>
+
+<script type="text/javascript">
+   window.onload = function () {
+      document.querySelector(".menuMobile").addEventListener("click", function () {
+         if (document.querySelector(".menu ul").style.display == 'flex') {
+            document.querySelector(".menu ul").style.display = 'none';
+            document.querySelector(".menuMobile").style.opacity = 1;
+         } else {
+            document.querySelector(".menu ul").style.display = 'flex';
+            document.querySelector(".menuMobile").style.opacity = 0.5;
+         }
+      });
+   };
+</script>
 
 </html>
