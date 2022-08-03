@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 * {
    margin: 0;
    font-family: 'Helvetica';
-   color: #171026;
+   color: #313346;
 }
 
 *::selection {
@@ -110,6 +112,7 @@ a:focus {
 }
 
 #label-introducao {
+   font-family: 'Permanent Marker';
    font-size: 22pt;
    margin-bottom: 15px;
 }
@@ -130,6 +133,7 @@ a:focus {
 
 .conteudo-dois h2 {
    font-size: 38pt;
+   font-family: 'Permanent Marker';
    color: #BABABA;
    text-align: end;
 }
@@ -141,6 +145,12 @@ a:focus {
 .faixas {
    padding: 50px;
    background: white;
+}
+
+.faixas-item {
+   border-left: 0 solid #9198E5;
+   transition-property: border-left;
+   transition-duration: 0.1s;
 }
 
 .faixas-item:nth-child(2n+1) {
@@ -156,6 +166,7 @@ a:focus {
    padding: 0 0 20px 60px;
    font-size: 11pt;
    color: #8a8888;
+
 }
 
 .faixas-item:hover {
